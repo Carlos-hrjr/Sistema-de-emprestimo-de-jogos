@@ -14,7 +14,6 @@ namespace SEJ.Entidades
         [Column("id")]
         public int? Id { get; set; }
         [Column("nome")]
-        [Required]
         public string Nome { get; set; }
         [Column("idade")]
         public int? Idade { get; set; }

@@ -8,20 +8,18 @@ using System.Threading.Tasks;
 
 namespace SEJ.Entidades
 {
-    [Table("Jogos")]
+    [Table("jogos")]
     public class Jogo
     {
         [Column("id")]
         public int? Id { get; set; }
         [Column("descricao")]
-        [Required]
         public string Descricao { get; set; }
         [Column("distribuidora")]
         public string Distribuidora { get; set; }
         [Column("emprestado")]
         public bool Emprestado { get; set; }
         [Column("valor")]
-        [Required]
         public decimal Valor { get; set; }
         [Column("ativo")]
         public bool Ativo { get; set; }
