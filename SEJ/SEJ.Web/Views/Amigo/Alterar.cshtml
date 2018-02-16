@@ -1,0 +1,43 @@
+﻿@model SEJ.Entidades.Amigo
+@{
+    ViewBag.Title = "Alterar";
+}
+
+<br />
+<br />
+<h2>Alterar Amigo</h2>
+<br />
+<br />
+<div class="form-group">
+    <input type="hidden" id="hdnId" value="@Model.Id" />
+
+    <label for="txtNome">Nome *</label>
+    <input type="text" id="txtNome" class="form-control" value="@Model.Nome" maxlength="150" />
+
+    <label for="txtEndereco">Endereço</label>
+    <input type="text" id="txtEndereco" class="form-control" value="@Model.Id" maxlength="150"/>
+
+    <label for="txtBairro">Bairro</label>
+    <input type="text" id="txtBairro" class="form-control" value="@Model.Bairro" maxlength="100" />
+
+    <label for="txtNumero">Número</label>
+    <input type="text" id="txtNumero" class="form-control" value="@Model.Numero" maxlength="8" />
+
+    <label for="txtIdade">Idade</label>
+    <input type="text" id="txtIdade" class="form-control" value="@Model.Idade" maxlength="3" data-mask="999"/>
+
+
+
+    <br />
+    <br />
+
+    <div>
+        <button class="btn btn-primary" id="btnSalvar">Salvar</button>
+        <button class="btn btn-default" id="btnVoltar">Voltar</button>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootbox.min.js"></script>
+<script type="text/javascript" src="~/Scripts/Amigo/alterar.js"></script>

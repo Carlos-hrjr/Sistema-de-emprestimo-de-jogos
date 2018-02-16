@@ -1,0 +1,37 @@
+﻿@model SEJ.Entidades.Jogo
+@{
+    ViewBag.Title = "Alterar";
+}
+
+<br />
+<br />
+<h2>Alterar Jogo</h2>
+<br />
+<br />
+<div class="form-group">
+
+    <input type="hidden" id="hdnId" value="@Model.Id" />
+
+    <label for="txtDescricao">Descrição *</label>
+    <input type="text" id="txtDescricao" class="form-control" value="@Model.Descricao" />
+
+    <label for="txtValor">Valor *</label>
+    <input type="text" id="txtValor" class="form-control" value="@Model.Valor"  data-mask="000000000000000,00" data-mask-reverse="true" />
+
+    <label for="txtDistribuidora">Distribuidora</label> 
+    <input type="text" id="txtDistribuidora" class="form-control" value="@Model.Distribuidora" />
+
+    <br />
+    <br />
+
+    <div>
+        <button class="btn btn-primary" id="btnSalvar">Salvar</button>
+        <button class="btn btn-default" id="btnVoltar">Voltar</button>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" src="~/Scripts/jquery.mask.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootbox.min.js"></script>
+<script type="text/javascript" src="~/Scripts/Jogo/alterar.js"></script>

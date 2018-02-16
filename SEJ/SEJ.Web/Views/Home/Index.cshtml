@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>SEJ</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Jogos</h2>
+        <p>Gerenciar Jogos</p>
+        <p>
+        @Html.ActionLink("Jogos", "Index", "Jogo", null, new {@class = "btn btn-default" })
+    </div>
+    <div class="col-md-4">
+        <h2>Amigos</h2>
+        <p>Gerenciar Amigos</p>
+        @Html.ActionLink("Amigos", "Index", "Amigo", null, new { @class = "btn btn-default" })
+    </div>
+    <div class="col-md-4">
+        <h2>Empréstimos</h2>
+        <p>Gerenciar Empréstimos</p>
+        @Html.ActionLink("Empréstimos", "Index", "Emprestimo", null, new { @class = "btn btn-default" })
+    </div>
+</div>

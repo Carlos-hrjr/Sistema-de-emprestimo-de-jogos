@@ -1,0 +1,44 @@
+CREATE TABLE jogos (
+	id INT IDENTITY PRIMARY KEY,
+	descricao VARCHAR(150) NOT NULL,
+	valor DECIMAL(15,2) NOT NULL,
+	emprestado BIT,
+	distribuidora VARCHAR(150),
+	ativo BIT
+)
+INSERT INTO jogos (descricao, distribuidora, valor, ativo)
+values ('FIFA 17', 'EA Sports', 199, 1)
+
+INSERT INTO jogos (descricao, distribuidora, valor, ativo)
+values ('Formula 1 2017', 'Codemasters', 199, 1)
+
+CREATE TABLE amigos (
+	id INT IDENTITY PRIMARY KEY,
+	nome VARCHAR(150) NOT NULL,
+	idade INT NULL,
+	endereco VARCHAR(150) NULL,
+	bairro VARCHAR(100) NULL,
+	numero VARCHAR(10) NULL,
+	ativo BIT
+)
+
+INSERT INTO amigos (nome, idade, endereco, bairro, numero, ativo)
+VALUES('João', 25, 'Rua X', 'Bairro X', '123', 1)
+
+INSERT INTO amigos (nome, idade, endereco, bairro, numero, ativo)
+VALUES('Maria', 20, 'Rua Y', 'Bairro Y', '456', 1)
+
+CREATE TABLE emprestimos (
+	id INT IDENTITY PRIMARY KEY,
+	data_emprestimo DATETIME NOT NULL,
+	data_devolucao DATETIME NULL,
+	id_jogo INT NOT NULL,
+	id_amigo INT NOT NULL,
+	devolvido BIT NULL,
+
+	CONSTRAINT FK_EMPRESTIMOS_JOGOS FOREIGN KEY (id_jogo)
+		REFERENCES jogos (id),
+
+	CONSTRAINT FK_EMPRESTIMOS_AMIGOS FOREIGN KEY (id_amigo)
+		REFERENCES amigos (id)
+)

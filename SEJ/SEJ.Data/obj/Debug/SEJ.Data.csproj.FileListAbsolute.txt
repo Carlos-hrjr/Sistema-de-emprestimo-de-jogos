@@ -1,0 +1,13 @@
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Data.dll.config
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Data.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Data.pdb
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Entidades.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Entidades.pdb
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\SEJ.Entidades.dll.config
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\obj\Debug\SEJ.Data.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\obj\Debug\SEJ.Data.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Data\obj\Debug\SEJ.Data.pdb

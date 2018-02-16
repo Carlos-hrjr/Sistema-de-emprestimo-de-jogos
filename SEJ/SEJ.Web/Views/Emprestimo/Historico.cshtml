@@ -1,0 +1,37 @@
+﻿@model IList<SEJ.Entidades.Emprestimo>
+@{
+    ViewBag.Title = "Historico";
+}
+
+<h2>Histórico de empréstimos</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Jogo</th>
+            <th>Amigo</th>
+            <th>Data do empréstimo</th>
+            <th>Data da devolução</th>
+            <th>Situação</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emprestimo in Model)
+        {
+            <tr>
+                <td>@emprestimo.Jogo.Descricao</td>
+                <td>@emprestimo.Amigo.Nome</td>
+                <td>@emprestimo.DataEmprestimo</td>
+                <td>@emprestimo.DataDevolucao</td>
+                @if (emprestimo.Devolvido)
+                {
+                    <td>Devolvido</td>
+                }
+                else
+                {
+                    <td>Não devolvido</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

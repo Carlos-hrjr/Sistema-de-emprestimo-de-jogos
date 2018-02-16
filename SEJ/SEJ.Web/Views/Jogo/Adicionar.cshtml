@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Adicionar";
+}
+<br />
+<br />
+<h2>Adicionar Jogo</h2>
+<br />
+<br />
+<div class="form-group">
+
+    <input type="hidden" id="hdnId" />
+
+    <label for="txtDescricao">Descrição *</label>
+    <input type="text" id="txtDescricao" class="form-control" />
+
+    <label for="txtValor">Valor *</label>
+    <input type="text" id="txtValor" class="form-control" data-mask="000000000000000,00" data-mask-reverse="true" />
+
+    <label for="txtDistribuidora">Distribuidora</label>
+    <input type="text" id="txtDistribuidora" class="form-control" />
+
+    <br />
+    <br />
+
+    <div>
+        <button class="btn btn-primary" id="btnSalvar">Salvar</button>
+        <button class="btn btn-default" id="btnVoltar">Voltar</button>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="~/Scripts/jquery.mask.js"></script>
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootbox.min.js"></script>
+<script type="text/javascript" src="~/Scripts/Jogo/adicionar.js"></script>

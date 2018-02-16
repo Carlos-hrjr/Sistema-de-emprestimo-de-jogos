@@ -1,0 +1,13 @@
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Business.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Business.pdb
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Data.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Entidades.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\EntityFramework.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Data.pdb
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Data.dll.config
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Entidades.pdb
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\SEJ.Entidades.dll.config
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\bin\Debug\EntityFramework.xml
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\obj\Debug\SEJ.Business.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\obj\Debug\SEJ.Business.dll
+C:\Users\Carlos\Desktop\SEJ\SEJ\SEJ.Business\obj\Debug\SEJ.Business.pdb

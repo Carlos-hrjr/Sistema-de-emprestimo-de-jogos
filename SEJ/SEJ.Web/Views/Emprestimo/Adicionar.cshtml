@@ -1,0 +1,25 @@
+﻿@model SEJ.Web.Models.EmprestimoVM
+@{
+    ViewBag.Title = "Adicionar";
+}
+
+<h2>Adicionar Empréstimo</h2>
+
+<div class="form-group">
+    <label for="jogos"> Selecione o Jogo</label>
+    @Html.DropDownListFor(x => x.Jogos, Model.Jogos,"Selecione", new { @class = "form-control", id ="jogos" })
+    <br />
+    <label for="amigos">Selecione o Amigo</label>
+    @Html.DropDownListFor(x => x.Amigos, Model.Amigos,"Selecione", new { @class="form-control", id = "amigos"})
+    <br />
+    <div class="row">
+        <button class="btn btn-primary" id="btnSalvar">Emprestar</button>
+        <button class="btn btn-default" id="btnVoltar">Voltar</button>
+    </div>
+    
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootbox.min.js"></script>
+<script type="text/javascript" src="~/Scripts/Emprestimo/adicionar.js"></script>

@@ -1,0 +1,69 @@
+﻿@model IList<SEJ.Entidades.Emprestimo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Empréstimos</h2>
+<br />
+<br />
+<div class="row">
+    <button class="btn btn-primary" id="btnAdicionar">Adicionar</button>
+    <button class="btn btn-primary" id="btnHistorico">Histórico</button>
+</div>
+
+<br />
+<br />
+
+<table class="table table-striped" id="tabelaEmprestimos">
+    <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Jogo
+            </th>
+            <th>
+                Amigo
+            </th>
+            <th>
+                Ações
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count > 0)
+        {
+            foreach (var emprestimo in Model)
+            {
+                <tr>
+                    <td>
+                        @emprestimo.Id
+                    </td>
+                    <td>
+                        @emprestimo.Jogo.Descricao
+                    </td>
+                    <td>
+                        @emprestimo.Amigo.Nome
+                    </td>
+                    <td>
+                        <a class="btn btn-default btnDevolver"><span class="glyphicon glyphicon-lock"></span></a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>SEM REGISTROS</td>
+            </tr>
+        }
+    </tbody>
+    
+</table>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Scripts/bootbox.min.js"></script>
+<script type="text/javascript" src="~/Scripts/Emprestimo/index.js"></script>
